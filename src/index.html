@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Prime Site</title>
-    <!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="showcase.css" />
+    <link rel="stylesheet" type="text/css" href="custom.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
     <link rel="icon" type="image/png" href="https://bulma.io/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
     <link rel="icon" type="image/png" href="https://bulma.io/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+    <!-- <link rel="icon" type="image/png" href="favicon.png" /> -->
     <script
       src="https://kit.fontawesome.com/2828f7885a.js"
       integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" type="image/png" href="favicon.png" />
   </head>
 
   <body>
@@ -366,80 +367,110 @@
         <div class="container">
           <div
             class="columns is-multiline"
-            data-aos="fade-in"
             data-aos-easing="linear"
-          >
+            data-aos="fade-in"
+            >
             <div class="column is-12">
               <h1 class="title has-text-centered section-title">Our Work</h1>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=0');"
-                ></figure>
-              </a>
+              <figure
+                data-target="modal-card"
+                class="image is-2by1 work-item modal-button"
+                style="background-image: url('https://picsum.photos/320/180?image=0')"
+              ></figure>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=10');"
-                ></figure>
-              </a>
+              <figure
+                data-target="modal-card"
+                class="image is-2by1 work-item modal-button"
+                style="background-image: url('https://picsum.photos/320/180?image=10')"
+              ></figure>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=20');"
-                ></figure>
-              </a>
+              <figure
+                data-target="modal-card"
+                class="image is-2by1 work-item modal-button"
+                style="background-image: url('https://picsum.photos/320/180?image=20')"
+              ></figure>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=30');"
-                ></figure>
-              </a>
+              <figure
+                data-target="modal-card"
+                class="image is-2by1 work-item modal-button"
+                style="background-image: url('https://picsum.photos/320/180?image=30')"
+              ></figure>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=40');"
-                ></figure>
-              </a>
+              <figure
+                data-target="modal-card"
+                class="image is-2by1 work-item modal-button"
+                style="background-image: url('https://picsum.photos/320/180?image=40')"
+              ></figure>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=50');"
-                ></figure>
-              </a>
+              <figure
+                data-target="modal-card"
+                class="image is-2by1 work-item modal-button"
+                style="background-image: url('https://picsum.photos/320/180?image=50')"
+              ></figure>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=60');"
-                ></figure>
-              </a>
+              <figure
+                data-target="modal-card"
+                class="image is-2by1 work-item modal-button"
+                style="background-image: url('https://picsum.photos/320/180?image=60')"
+              ></figure>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=70');"
-                ></figure>
-              </a>
+              <figure
+                data-target="modal-card"
+                class="image is-2by1 work-item modal-button"
+                style="background-image: url('https://picsum.photos/320/180?image=70')"
+              ></figure>
             </div>
           </div>
         </div>
       </div>
+
+      <div id="modal-card" class="modal modal-fx-3dSlit">
+        <div class="modal-background"></div>
+        <div class="modal-content is-tiny">
+          <!-- content -->
+          <div class="card">
+            <!-- <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
+            </figure>
+            </div> -->
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure  class="image is-48x48">
+                    <img class="is-rounded"src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="linda barret avatar">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">Jane Doe</p>
+                  <p class="subtitle is-6">@jane_doe</p>
+                </div>
+              </div>
+              <div class="content">
+                222Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it can't get theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the pit mummah Yessah, mummah muckle riyht on'ta her
+                <a>@bulmaio</a>.
+                <a href="#">#css</a>
+                <a href="#">#responsive</a>
+                <br>
+                <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
+              </div>
+            </div>
+          </div>
+          <!-- end content -->
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div><!-- end tiny modal card -->
       <!-- End Work Content -->
+
       <!-- Begin Contact Content -->
       <div class="section-light contact" id="contact">
         <div class="container">
@@ -447,7 +478,7 @@
             class="columns is-multiline"
             data-aos="fade-in-up"
             data-aos-easing="linear"
-          >
+            >
             <div class="column is-12 about-me">
               <h1 class="title has-text-centered section-title">
                 Get in touch
@@ -457,7 +488,7 @@
               <form
                 action="https://formspree.io/sroth77@gmail.com"
                 method="POST"
-              >
+                >
                 <div class="field">
                   <label class="label">Name</label>
                   <div class="control has-icons-left">
@@ -527,6 +558,7 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="showcase.js"></script>
+    <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
