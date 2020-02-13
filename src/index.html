@@ -375,6 +375,7 @@
             </div>
             <div class="column is-3">
               <figure
+                onclick="setModalImage(0)"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
                 style="background-image: url('https://picsum.photos/320/180?image=0')"
@@ -382,6 +383,7 @@
             </div>
             <div class="column is-3">
               <figure
+                onclick="setModalImage(10)"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
                 style="background-image: url('https://picsum.photos/320/180?image=10')"
@@ -389,6 +391,7 @@
             </div>
             <div class="column is-3">
               <figure
+                onclick="setModalImage(20)"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
                 style="background-image: url('https://picsum.photos/320/180?image=20')"
@@ -396,6 +399,7 @@
             </div>
             <div class="column is-3">
               <figure
+                onclick="setModalImage(30)"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
                 style="background-image: url('https://picsum.photos/320/180?image=30')"
@@ -403,6 +407,7 @@
             </div>
             <div class="column is-3">
               <figure
+                onclick="setModalImage(40)"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
                 style="background-image: url('https://picsum.photos/320/180?image=40')"
@@ -410,6 +415,7 @@
             </div>
             <div class="column is-3">
               <figure
+                onclick="setModalImage(50)"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
                 style="background-image: url('https://picsum.photos/320/180?image=50')"
@@ -417,6 +423,7 @@
             </div>
             <div class="column is-3">
               <figure
+                onclick="setModalImage(60)"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
                 style="background-image: url('https://picsum.photos/320/180?image=60')"
@@ -424,6 +431,7 @@
             </div>
             <div class="column is-3">
               <figure
+                onclick="setModalImage(70)"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
                 style="background-image: url('https://picsum.photos/320/180?image=70')"
@@ -433,43 +441,32 @@
         </div>
       </div>
 
+      <!-- 3dFlipVertical card -->
       <div id="modal-card" class="modal modal-fx-3dSlit">
-        <div class="modal-background"></div>
-        <div class="modal-content is-tiny">
-          <!-- content -->
-          <div class="card">
-            <!-- <div class="card-image">
-            <figure class="image is-4by3">
-              <img src="https://source.unsplash.com/6Ticnhs1AG0" alt="Placeholder image">
-            </figure>
-            </div> -->
-            <div class="card-content">
-              <div class="media">
-                <div class="media-left">
-                  <figure  class="image is-48x48">
-                    <img class="is-rounded"src="http://www.radfaces.com/images/avatars/linda-barret.jpg" alt="linda barret avatar">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <p class="title is-4">Jane Doe</p>
-                  <p class="subtitle is-6">@jane_doe</p>
-                </div>
+          <div class="modal-background"></div>
+          <div class="modal-content">
+              <!-- content -->
+              <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-2by1">
+                        <img id="profileImage" src="" alt="Profile image">
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                      <a>@bulmaio</a>.
+                      <a href="#">#css</a>
+                      <a href="#">#responsive</a>
+                      <br>
+                      <time datetime="2018-1-1">12:30 PM - 16 Mar 2018</time>
+                    </div>
+                  </div>
               </div>
-              <div class="content">
-                222Laum Ipsum junkah potatoes bookin' it. Moosetown rig up I'm tellin' you way up north bookin' it can't get theyah from heeyah native bean suppah whawf Powrtland Museum of Aht, back woods hawsun around the pit mummah Yessah, mummah muckle riyht on'ta her
-                <a>@bulmaio</a>.
-                <a href="#">#css</a>
-                <a href="#">#responsive</a>
-                <br>
-                <time datetime="2018-02-02">12:45 AM - 20 June 2018</time>
-              </div>
-            </div>
+              <!-- end content -->
           </div>
-          <!-- end content -->
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-      </div><!-- end tiny modal card -->
-      <!-- End Work Content -->
+          <button class="modal-close is-large" aria-label="close"></button>
+      </div>
 
       <!-- Begin Contact Content -->
       <div class="section-light contact" id="contact">

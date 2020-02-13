@@ -1,4 +1,11 @@
 "use strict";
+
+
+function setModalImage(id) {
+  document.getElementById('profileImage').src = 'https://picsum.photos/320/180?image=' + id;
+}
+
+
 (function () {
 
   // Get that hamburger menu cookin' //
