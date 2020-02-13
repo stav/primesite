@@ -1,3 +1,9 @@
+/* Make relative link scroll smoothly */
+html {
+  scroll-behavior: smooth
+}
+
+/* Make modal buttons look like they're clickable */
 figure.modal-button {
   cursor: pointer;
 }
