@@ -223,18 +223,18 @@ html {
   }
 }
 
-.main-content .section-color.services {
+.main-content .section-color.technology {
   padding: 100px;
   background-color: #43485c;
   color: white;
 }
 
-.main-content .section-color.services .title,
-.main-content .section-color.services .subtitle {
+.main-content .section-color.technology .title,
+.main-content .section-color.technology .subtitle {
   color: white;
 }
 
-.main-content .section-color.services i {
+.main-content .section-color.technology i {
   font-size: 3rem;
   padding: 20px;
 }
