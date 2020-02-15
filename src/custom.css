@@ -24,6 +24,25 @@ figure.modal-button {
   font-weight: lighter;
 }
 
+/* Stack style */
+.main-content .section-dark.stack {
+  padding: 100px;
+  background-color: #43485c;
+  background-color: #43485c;
+  color: white;
+}
+.main-content .section-dark.stack .title,
+.main-content .section-dark.stack .subtitle {
+  color: white;
+}
+.main-content .section-dark.stack i {
+  font-size: 3rem;
+  padding: 20px;
+}
+.main-content .section-dark.stack .stack-icon {
+  padding: 35px 50px;
+}
+
 /* Loader spinner */
 .lds-ripple {
   display: inline-block;
