@@ -312,33 +312,17 @@
             <div class="column is-12 about-me">
               <h1 class="title has-text-centered section-title">Skills</h1>
             </div>
-            <div
-              class="column is-6"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <h1>Adobe Experience Design</h1>
-              <progress class="progress" value="70" max="100">30%</progress>
-              <h1>Adobe After Effects</h1>
-              <progress class="progress" value="65" max="100">30%</progress>
-              <h1>Visual Studio Code</h1>
-              <progress class="progress" value="58" max="100">45%</progress>
-              <h1>Sketch</h1>
-              <progress class="progress" value="90" max="100">60%</progress>
+            <div class="column is-6" data-aos="fade-in" data-aos-easing="linear">
+              <h1> Python                 </h1> <progress class="progress" value="80" max="100">80%</progress>
+              <h1> JavaScript             </h1> <progress class="progress" value="70" max="100">70%</progress>
+              <h1> Unix Server Admin      </h1> <progress class="progress" value="60" max="100">%</progress>
+              <h1> Databases              </h1> <progress class="progress" value="90" max="100">90%</progress>
             </div>
-            <div
-              class="column is-6"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <h1>HTML</h1>
-              <progress class="progress" value="85" max="100">30%</progress>
-              <h1>CSS</h1>
-              <progress class="progress" value="95" max="100">30%</progress>
-              <h1>VueJS</h1>
-              <progress class="progress" value="70" max="100">45%</progress>
-              <h1>React</h1>
-              <progress class="progress" value="60" max="100">60%</progress>
+            <div class="column is-6" data-aos="fade-in" data-aos-easing="linear">
+              <h1>VueJS</h1> <progress class="progress" value="70" max="100">45%</progress>
+              <h1>React</h1> <progress class="progress" value="60" max="100">60%</progress>
+              <h1>HTML</h1>  <progress class="progress" value="85" max="100">30%</progress>
+              <h1>CSS</h1>   <progress class="progress" value="65" max="100">30%</progress>
             </div>
           </div>
         </div>
@@ -358,66 +342,34 @@
             </div>
             <div class="column is-3">
               <figure
-                onclick="setModalImage(0)"
+                onclick="setModalImage('img/mexico-reise_1059x596.jpg', 'img/mexico-reise_1082x5333.jpg')"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
-                style="background-image: url('https://picsum.photos/320/180?image=0')"
+                style="background-image: url('img/mexico-reise_320x180.jpg')"
               ></figure>
             </div>
             <div class="column is-3">
               <figure
-                onclick="setModalImage(10)"
+                onclick="setModalImage('img/scrapinghub_1146x552.jpg', 'img/scrapinghub_1186x4493.jpg')"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
-                style="background-image: url('https://picsum.photos/320/180?image=10')"
+                style="background-image: url('img/scrapinghub_320x180.jpg')"
               ></figure>
             </div>
             <div class="column is-3">
               <figure
-                onclick="setModalImage(20)"
+                onclick="setModalImage('img/levelup_1176x548.jpg', 'img/levelup_1216x6740.jpg')"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
-                style="background-image: url('https://picsum.photos/320/180?image=20')"
+                style="background-image: url('img/levelup_320x180.jpg')"
               ></figure>
             </div>
             <div class="column is-3">
               <figure
-                onclick="setModalImage(30)"
+                onclick="setModalImage('img/ticketnetwork_563x381.jpg', 'img/ticketnetwork_563x2143.jpg')"
                 data-target="modal-card"
                 class="image is-2by1 work-item modal-button"
-                style="background-image: url('https://picsum.photos/320/180?image=30')"
-              ></figure>
-            </div>
-            <div class="column is-3">
-              <figure
-                onclick="setModalImage(40)"
-                data-target="modal-card"
-                class="image is-2by1 work-item modal-button"
-                style="background-image: url('https://picsum.photos/320/180?image=40')"
-              ></figure>
-            </div>
-            <div class="column is-3">
-              <figure
-                onclick="setModalImage(50)"
-                data-target="modal-card"
-                class="image is-2by1 work-item modal-button"
-                style="background-image: url('https://picsum.photos/320/180?image=50')"
-              ></figure>
-            </div>
-            <div class="column is-3">
-              <figure
-                onclick="setModalImage(60)"
-                data-target="modal-card"
-                class="image is-2by1 work-item modal-button"
-                style="background-image: url('https://picsum.photos/320/180?image=60')"
-              ></figure>
-            </div>
-            <div class="column is-3">
-              <figure
-                onclick="setModalImage(70)"
-                data-target="modal-card"
-                class="image is-2by1 work-item modal-button"
-                style="background-image: url('https://picsum.photos/320/180?image=70')"
+                style="background-image: url('img/ticketnetwork_320x180.jpg')"
               ></figure>
             </div>
           </div>
@@ -430,18 +382,13 @@
               <!-- content -->
               <div class="card">
                   <div class="card-image">
-                    <figure class="image is-2by1">
-                        <img id="profileImage" src="" alt="Profile image">
+                    <figure class="image">
+                        <img id="profileImage" src="" alt="Profile image" title="Click to toggle information">
                     </figure>
                   </div>
                   <div class="card-content">
-                    <div class="content">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                      <a>@bulmaio</a>.
-                      <a href="#">#css</a>
-                      <a href="#">#responsive</a>
-                      <br>
-                      <time datetime="2018-1-1">12:30 PM - 16 Mar 2018</time>
+                    <div class="content has-text-centered">
+                      Click the image above to toggle between the long and short versions.
                     </div>
                   </div>
               </div>
@@ -617,6 +564,7 @@
     <!-- End Footer -->
 
     <!-- Scripts -->
+    <script src="image.js"></script>
     <script src="custom.js"></script>
     <script src="lib/modal-fx.js"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
