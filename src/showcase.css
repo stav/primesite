@@ -132,7 +132,7 @@ html {
 }
 
 .main-content .section-dark.my-work {
-  padding: 120px;
+  padding: 100px;
 }
 
 @media (max-width: 599px) {
@@ -204,7 +204,7 @@ html {
 }
 
 .main-content .section-light.contact {
-  padding: 200px;
+  padding: 100px;
 }
 
 .main-content .section-light.contact button {
