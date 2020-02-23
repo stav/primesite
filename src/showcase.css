@@ -251,26 +251,24 @@ html {
   bottom: 0;
   width: 100vw;
   padding: 0;
-  height: 80px;
   line-height: 25px;
   text-align: center;
-  background: #1f2c6c;
+  background: #316492;
   color: whitesmoke;
-  padding-top: 2rem;
 }
-
 .footer a {
   padding: 0rem 1rem 1rem 1rem;
   color: lightgrey;
 }
-
 .footer a i {
   font-size: 1.5rem;
   padding: 0px 10px;
 }
-
 .footer a .nav-item {
   color: whitesmoke;
+}
+.footer .logo {
+  margin: 2em;
 }
 
 .fa-download {
