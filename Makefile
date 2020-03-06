@@ -1,9 +1,9 @@
 .PHONY: init test clean deploy
 
-REPO_NAME    = org.centerstar.primesite
+REPO_NAME    = dev.primesite
 REPO_URI    := stav@cowboy:/srv/git/$(REPO_NAME).git
 REPO_REMOTE := $(shell git remote)
-RENDER_DIR  := cowboy:/srv/org.centerstar.primesite/doc
+RENDER_DIR  := cowboy:/srv/dev.primesite/doc
 
 init:
 	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
