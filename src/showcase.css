@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:900&display=swap');
 
 .has-vertically-aligned-content {
   display: flex;
@@ -31,9 +31,9 @@ html {
 
 .hero .title {
   font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
   font-size: 5rem;
   color: whitesmoke;
-  /*font-style: oblique;*/
 }
 
 .hero .subtitle {
@@ -267,10 +267,6 @@ html {
 }
 .footer a .nav-item {
   color: whitesmoke;
-}
-.logo {
-  margin: 2em;
-  height: 100px;
 }
 
 .fa-download {
