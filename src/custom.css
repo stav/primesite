@@ -43,6 +43,12 @@ figure.modal-button {
   padding: 35px 50px;
 }
 
+/* Logo */
+.logo {
+  height: 100px;
+  margin-bottom: 2em;
+}
+
 /* Loader spinner */
 .lds-ripple {
   display: inline-block;

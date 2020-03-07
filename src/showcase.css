@@ -250,6 +250,7 @@ html {
 .footer {
   bottom: 0;
   width: 100vw;
+  height: 50vw;
   padding: 0;
   line-height: 25px;
   text-align: center;
@@ -267,8 +268,9 @@ html {
 .footer a .nav-item {
   color: whitesmoke;
 }
-.footer .logo {
+.logo {
   margin: 2em;
+  height: 100px;
 }
 
 .fa-download {

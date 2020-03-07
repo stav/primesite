@@ -82,7 +82,7 @@
             <h1 class="subtitle">This is</h1>
             <h2 class="title">Prime Site</h2>
             <h1 class="subtitle profession">A Prime Systems division</h1>
-            <p> <img src="img/logo-white.svg" alt="logo"> </p>
+            <p> <img class="logo" src="img/logo.svg" alt="logo"> </p>
           </div>
         </div>
         <!-- End Hero Content-->
@@ -168,7 +168,7 @@
                     steven.almeroth@gmail.com
                   </p>
                 </div>
-                <div class="column" style="text-align: center">
+                <div class="column">
                   <p class="heading">
                     <strong>View our</strong>
                   </p>
@@ -560,16 +560,18 @@
     <!-- End Main Content -->
 
     <!-- Begin Footer -->
-    <div class="footer">
-      <img class="logo" src="img/logo-black.svg" alt="logo">
-      <p class="has-text-weight-light">
-        Logo design credit:
-        <a
-          href="https://smartlogos.co/post/146961956777/sp-logo-design"
-          target="_blank"
-        >smartlogos.co</a>
-      </p>
-    </div>
+      <footer class="footer columns is-vcentered">
+        <div class="column">
+        <img class="logo" src="img/logo.svg" alt="logo">
+        <p class="has-text-weight-light">
+          Logo design credit:
+          <a
+            href="https://smartlogos.co/post/146961956777/sp-logo-design"
+            target="_blank"
+            >smartlogos.co</a>
+        </p>
+        </div>
+      </footer>
     <!-- End Footer -->
 
     <!-- Scripts -->
@@ -578,11 +580,6 @@
     <script src="lib/modal-fx.js"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        easing: "ease-out",
-        duration: 800,
-      });
-    </script>
+    <script> AOS.init({ easing: "ease-out", duration: 800 }); </script>
   </body>
 </html>
