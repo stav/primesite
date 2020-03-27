@@ -10,9 +10,9 @@
       0
     );
     // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
+    if ( $navbarBurgers.length > 0 ) {
       // Add a click event on each of them
-      $navbarBurgers.forEach(function($el) {
+      $navbarBurgers.forEach(function( $el ) {
         $el.addEventListener("click", function() {
           // Get the target from the "data-target" attribute
           var target = $el.dataset.target;
@@ -42,10 +42,23 @@
     else document.addEventListener("DOMContentLoaded", callback);
   }
   ready(() => { // Document is now loaded
+
     // Stop showing the spinner
     document.querySelector(".preloader-wrapper").style.display = 'none';
+
     // Undo the preloader style
     document.querySelector("body").classList.remove('preloader-site');
+
+    // Navigation
+    for (let $nav of document.querySelectorAll("#main-nav ul li")) {
+      $nav.addEventListener("click", function() {
+        for (let $active of document.querySelectorAll("#main-nav ul li.is-active")) {
+          $active.classList.remove("is-active");
+        };
+        $nav.classList.toggle("is-active");
+      });
+    };
+
   });
 
 })();
