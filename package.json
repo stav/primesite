@@ -1,0 +1,23 @@
+{
+  "name": "primesite",
+  "version": "0.1.0",
+  "description": "https://primesite.dev/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "stav@cowboy:/srv/git/dev.primesite.git"
+  },
+  "keywords": [
+    "web",
+    "systems",
+    "development"
+  ],
+  "author": "Steven Almeroth",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
