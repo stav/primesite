@@ -120,3 +120,8 @@ figure.modal-button {
 .main-nav {
   margin-top: 0;
 }
+
+/* Portfolio */
+#my-work {
+  background-color: white;
+}
