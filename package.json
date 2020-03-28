@@ -18,6 +18,8 @@
   "author": "Steven Almeroth",
   "license": "ISC",
   "devDependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.0",
     "nodemon": "^2.0.2"
   }
 }
