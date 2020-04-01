@@ -147,3 +147,9 @@ figure.modal-button {
 #login-error {
   padding-bottom: 1em;
 }
+
+/* Discounts */
+.discounts {
+  margin-left: 3em;
+  margin-top: 2em;
+}

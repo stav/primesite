@@ -1,4 +1,4 @@
-.PHONY: init test clean deploy
+.PHONY: init test clean build deploy
 
 REPO_NAME    = dev.primesite
 REPO_URI    := stav@cowboy:/srv/git/$(REPO_NAME).git
@@ -26,11 +26,18 @@ test:
 clean:
 	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	@echo ~Cleaning
+# 	rm -rf ./dist/*
+
+build:
+	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	@echo ~Building
+	@echo Need to run /gen and then copy static to dist
 
 deploy:
 	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	@echo ~Deploying
 	@make test
 	@make clean
-	scp -r ./src/* $(RENDER_DIR)
+	@make build
+	scp -r ./dist/* $(RENDER_DIR)
 	git push origin master
