@@ -51,6 +51,17 @@ figure.modal-button {
   height: 100px;
   margin-bottom: 2em;
 }
+.button-logo {
+  opacity: 0.6;
+  padding: 2px;
+}
+
+/* Login */
+.button-login {
+  font-weight: bold;
+  padding-left: 4px;
+  color: rgb(74, 74, 74);
+}
 
 /* Loader spinner */
 .lds-ripple {
@@ -87,8 +98,14 @@ figure.modal-button {
 }
 
 /* Navigation */
+.navbar-burger {
+  color: inherit;
+}
+.hero-nav {
+  padding: 20px;
+}
 #main-nav {
-  background-color: rgba(256, 256, 256, 0.8);
+  background-color: rgba(256, 256, 256, 0.9);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
   position: -webkit-sticky;
   position: sticky;

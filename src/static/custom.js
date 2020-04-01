@@ -50,12 +50,10 @@
     document.querySelector("body").classList.remove('preloader-site');
 
     // Navigation
-    for (let $nav of document.querySelectorAll("#main-nav ul li")) {
+    for (let $nav of document.querySelectorAll("#mobile-nav .navbar-item")) {
       $nav.addEventListener("click", function() {
-        for (let $active of document.querySelectorAll("#main-nav ul li.is-active")) {
-          $active.classList.remove("is-active");
-        };
-        $nav.classList.toggle("is-active");
+          document.getElementById('mobile-nav').classList.remove('is-active')
+          document.getElementById('mobile-burger').classList.remove('is-active')
       });
     };
 

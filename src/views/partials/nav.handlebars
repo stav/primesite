@@ -1,29 +1,41 @@
 <!-- Begin Main Navigation -->
 <nav id="main-nav">
-  <div class="main-nav columns">
+
+  <!-- Begin Mobile Nav -->
+  <nav class="navbar is-transparent is-hidden-desktop">
+    <!-- Begin Burger Menu -->
+    <div class="navbar-brand">
+      <div id="mobile-burger" class="navbar-burger burger" data-target="mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- End Burger Menu -->
+
+    <div id="mobile-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#home">       Home      </a>
+        <a class="navbar-item" href="#about-me">   About     </a>
+        <a class="navbar-item" href="#technology"> Services  </a>
+        <a class="navbar-item" href="#my-work">    PortFolio </a>
+        <a class="navbar-item" href="#stack">      Stack     </a>
+        <a class="navbar-item" href="#contact">    Contact   </a>
+      </div>
+    </div>
+
+  </nav>
+  <!-- End Mobile Nav -->
+
+  <div class="main-nav columns is-hidden-mobile">
     <div class="column is-12 hero-menu-desktop has-text-centered">
       <ul>
-        <li class="is-active">
-          <a href="#home"> Home </a>
-        </li>
-        <li>
-          <a href="#about-me"> About </a>
-        </li>
-        <li>
-          <a href="#technology"> Services </a>
-        </li>
-        <li>
-          <a href="#skills"> Skills </a>
-        </li>
-        <li>
-          <a href="#my-work"> PortFolio </a>
-        </li>
-        <li>
-          <a href="#stack"> Stack </a>
-        </li>
-        <li>
-          <a href="#contact"> Contact </a>
-        </li>
+        <li><a href="#home">       Home      </a></li>
+        <li><a href="#about-me">   About     </a></li>
+        <li><a href="#technology"> Services  </a></li>
+        <li><a href="#my-work">    PortFolio </a></li>
+        <li><a href="#stack">      Stack     </a></li>
+        <li><a href="#contact">    Contact   </a></li>
       </ul>
     </div>
   </div>
