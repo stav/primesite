@@ -4,17 +4,20 @@
   <section class="hero">
 
     <div class="hero-head">
+
       <a href="http://primesite.dev/" class="hero-nav is-inline-flex">
         <h2 class="title"> Prime Site </h2>
       </a>
+
       <div class="hero-nav is-inline-flex is-pulled-right">
-        <a class="button is-info is-inverted">
+        <a class="button modal-button is-info is-inverted" data-target="login-card">
           <span class="button-logo icon">
             <img src="img/logo-black.svg" alt="logo">
           </span>
           <span class="button-login">Login</span>
         </a>
       </div>
+
     </div>
 
     <!-- Begin Hero Content-->
@@ -30,3 +33,5 @@
   <!-- End Hero -->
 </div>
 <!-- End Header -->
+
+{{> login }}

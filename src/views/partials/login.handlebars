@@ -1,0 +1,60 @@
+<!-- Begin Login -->
+<!-- 3dFlipVertical card -->
+<div id="login-card" class="modal modal-fx-3dSlit">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <!-- content -->
+    <div class="card">
+      <div class="card-content">
+        <div class="container has-text-centered">
+          <div class="column">
+            <h3 class="title has-text-black">Login</h3>
+            <div class="box">
+              <figure class="avatar">
+                <img class="logo" src="img/logo-black.svg" alt="logo">
+              </figure>
+              <p id="login-error" class="help is-danger" style="display: none">
+                Credentials invalid, cannot login
+              </p>
+
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input class="input is-large" type="email" placeholder="Email" autofocus="">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control has-icons-left">
+                    <input class="input is-large" type="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="checkbox">
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
+
+                <button
+                  class="button is-block is-info is-large is-fullwidth"
+                  onclick="document.getElementById('login-error').style.display = 'block'"
+                  >
+                  Login <i class="fa fa-sign-in" aria-hidden="true"></i>
+                </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end content -->
+  </div>
+  <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<!-- End Login -->

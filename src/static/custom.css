@@ -142,3 +142,8 @@ figure.modal-button {
 #my-work {
   background-color: white;
 }
+
+/* Login */
+#login-error {
+  padding-bottom: 1em;
+}
