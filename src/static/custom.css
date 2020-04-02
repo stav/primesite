@@ -129,9 +129,12 @@ figure.modal-button {
 #main-nav ul li a {
   color: #1f2c6c;
   position: relative;
-  line-height: 3em;
-  padding: 1em 0;
+  line-height: 2em;
+  padding: 0.5em 0;
   top: -2px;
+}
+#main-nav ul li a:hover {
+  border-bottom: 1px solid red;
 }
 #main-nav ul li.is-active a {
   border-bottom: 2px solid #1f2c6c;
