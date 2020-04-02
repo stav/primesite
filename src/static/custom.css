@@ -20,9 +20,6 @@ figure.modal-button {
 }
 
 /* Technology style */
-.technology.column {
-  margin-top: 2em;
-}
 .technology-title {
   margin-top: 0.5em;
   font-size: 1.5em;
@@ -154,4 +151,16 @@ figure.modal-button {
 .discounts {
   margin-left: 3em;
   margin-top: 2em;
+}
+
+/* Title */
+.title:not(:last-child) {
+  margin-bottom: 0;
+}
+
+/* Sections */
+.section-blurb {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-style: oblique;
 }
