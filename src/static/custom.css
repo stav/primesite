@@ -115,7 +115,6 @@ figure.modal-button {
 #main-nav ul {
   font-size: 1rem;
   font-weight: 600;
-  line-height: 38px;
   letter-spacing: 1px;
   text-transform: lowercase;
 }
@@ -129,6 +128,10 @@ figure.modal-button {
 }
 #main-nav ul li a {
   color: #1f2c6c;
+  position: relative;
+  line-height: 3em;
+  padding: 1em 0;
+  top: -2px;
 }
 #main-nav ul li.is-active a {
   border-bottom: 2px solid #1f2c6c;
