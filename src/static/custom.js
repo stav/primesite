@@ -33,21 +33,12 @@
     document.getElementById("toTop").style.display = low() ? 'block' : 'none';
   };
 
-  // Show loading spinner
-  document.querySelector("body").classList.add('preloader-site');
-
   // Setup callback function for when the document is loaded
   var ready = (callback) => {
     if (document.readyState != "loading") callback();
     else document.addEventListener("DOMContentLoaded", callback);
   }
   ready(() => { // Document is now loaded
-
-    // Stop showing the spinner
-    document.querySelector(".preloader-wrapper").style.display = 'none';
-
-    // Undo the preloader style
-    document.querySelector("body").classList.remove('preloader-site');
 
     // Navigation
     for (let $nav of document.querySelectorAll("#mobile-nav .navbar-item")) {
