@@ -19,6 +19,11 @@ figure.modal-button {
   padding: 2rem;
 }
 
+/* Footer */
+footer {
+  display: flex;
+}
+
 /* Technology style */
 .technology-title {
   margin-top: 0.5em;
