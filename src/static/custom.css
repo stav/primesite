@@ -103,6 +103,9 @@ figure.modal-button {
 .navbar-burger {
   color: inherit;
 }
+#mobile-burger .burger {
+  padding-right: inherit;
+}
 #main-nav {
   background-color: rgba(256, 256, 256, 0.9);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
