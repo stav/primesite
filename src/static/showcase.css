@@ -102,7 +102,7 @@ html {
 
 .main-content .section-dark.resume {
   height: 400px;
-  padding-top: 77px;
+  padding: 60px;
 }
 
 @media (max-width: 599px) {
