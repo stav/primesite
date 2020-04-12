@@ -23,6 +23,10 @@ figure.modal-button {
 footer {
   display: flex;
 }
+footer .subtitle {
+  color: whitesmoke;
+  font-size: 2rem;
+}
 
 /* Technology style */
 .technology-title {
