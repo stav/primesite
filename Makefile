@@ -31,7 +31,6 @@ clean:
 build:
 	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	@echo ~Building
-	@echo Need to run /gen and then copy static to dist
 	curl -o /dev/null http://localhost:5005/gen
 	mv ./src/index.html ./dist
 	cp -r ./src/static/* ./dist

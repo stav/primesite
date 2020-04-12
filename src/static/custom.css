@@ -81,6 +81,9 @@ footer .subtitle {
 #mobile-burger .burger {
   padding-right: inherit;
 }
+#mobile-burger.is-active .hamburger {
+  transform: rotate(90deg);
+}
 #main-nav {
   background-color: rgba(256, 256, 256, 0.9);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.082);
