@@ -28,6 +28,17 @@ footer .subtitle {
   font-size: 2rem;
 }
 
+/* About */
+.about-me .blurb::first-letter {
+  line-height: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.about-me .blurb {
+  line-height: 2;
+  margin: 2em 0;
+}
+
 /* Technology style */
 .technology-title {
   margin-top: 0.5em;
