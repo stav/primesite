@@ -45,6 +45,10 @@ html {
   font-size: 1.7rem;
   text-transform: uppercase;
 }
+.footer .profession {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
 
 .hero .hero-foot {
   background: white;
