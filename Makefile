@@ -34,8 +34,18 @@ clean:
 build:
 	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	@echo ~Building
+	mkdir -p ./dist
+	# Generate HTML
 	curl -o /dev/null http://localhost:5005/gen
-	mv ./src/index.html ./dist
+	mv ./src/index.html ./dist/
+	# Copy Font Awesome
+	mkdir -p ./dist/fontawesome/css ./dist/fontawesome/webfonts
+	cp ./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css          ./dist/fontawesome/css
+	cp ./node_modules/@fortawesome/fontawesome-free/css/brands.css               ./dist/fontawesome/css
+	cp ./node_modules/@fortawesome/fontawesome-free/css/solid.css                ./dist/fontawesome/css
+	cp ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2  ./dist/fontawesome/webfonts
+	cp ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2 ./dist/fontawesome/webfonts
+	# Copy to distribution directory
 	cp -r ./src/static/* ./dist
 
 deploy:

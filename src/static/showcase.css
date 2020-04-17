@@ -162,28 +162,28 @@ html {
   padding: 30px;
 }
 
-.main-content .section-light.about-me {
+.main-content .about-me {
   padding: 70px;
 }
 
-.main-content .section-light.about-me .is-larger {
+.main-content .about-me .is-larger {
   font-size: 1.2rem;
 }
 
 @media (max-width: 599px) {
-  .main-content .section-light.about-me .about-links {
+  .main-content .about-me .about-links {
     text-align: center;
   }
 }
 
-.main-content .section-light.about-me .right-image img {
+.main-content .about-me .right-image img {
   border-radius: 11px;
   margin: 20px;
   box-shadow: 0 5px 20px rgba(14, 25, 80, 0.3);
 }
 
 @media (max-width: 599px) {
-  .main-content .section-light.about-me .right-image img {
+  .main-content .about-me .right-image img {
     margin: auto;
   }
 }
