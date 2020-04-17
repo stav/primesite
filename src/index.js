@@ -10,8 +10,12 @@ app.engine('handlebars', handlebars())
 app.use(express.static(path.join(__dirname, 'static')))
 
 app.set('view engine', 'handlebars')
-app.set('partials', path.join(__dirname, 'parts'));
-app.set('views', path.join(__dirname, 'views'));
+app.set('partials', path.join(__dirname, 'parts'))
+app.set('views', path.join(__dirname, 'views'))
+
+app.use('/fontawesome', express.static(
+  path.join(__dirname, '../node_modules/@fortawesome/fontawesome-free')
+))
 
 app.get('/', (req, res) => {
   res.render('index')
