@@ -18,6 +18,9 @@ endif
 	git push --set-upstream origin master
 # 	git branch --set-upstream-to=origin/master master
 
+serve:
+	cd src && ../node_modules/.bin/nodemon --watch ./ --exec node index.js  -e "html css js handlebars"
+
 test:
 	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	@echo ~Testing
