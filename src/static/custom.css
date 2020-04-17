@@ -144,6 +144,9 @@ footer .subtitle {
 #login-error {
   padding-bottom: 1em;
 }
+#login-card input[type="checkbox"] {
+  vertical-align: text-top;
+}
 
 /* Discounts */
 .discounts {
