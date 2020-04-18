@@ -9,3 +9,17 @@ function closePromo() {
   document.getElementsByTagName('body')[0].style.overflowY = "";
 
 }
+
+function contactPromo() {
+
+	closePromo()
+	focusElement('contact-name')
+
+}
+
+function focusElement ( name ) {
+
+  // For some reason Firefox need the timeout
+  setTimeout('document.getElementById("contact-name").focus()', 500)
+
+}
