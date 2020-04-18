@@ -11,33 +11,59 @@
   </div>
 </div>
 
-<!-- 3dFlipVertical card -->
-<div id="promo-card" class="modal modal-fx-3dSlit">
+<div id="promo-card" class="modal">
   <div class="modal-background"></div>
-  <div class="modal-content">
-    <!-- content -->
-    <div class="card">
-      <div class="card-content">
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title"> Spring Into Savings </p>
+      <button onclick="closePromo()" class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <div class="content">
 
-        <figure class="avatar">
-          <img src="img/primesite-sale-transp.png" alt="promotion" />
-        </figure>
-
-        <div class="container has-text-centered">
-          <div class="column">
-            <h3 class="title has-text-black">Promotion</h3>
-            <div class="box">
-
-              Yes!
-
-            </div>
-
-          </div>
+        <div class="card-image">
+          <figure>
+            <img src="img/primesite-sale-transp.png" alt="promotion" />
+          </figure>
         </div>
+
+        <p>
+          <span class="prime-site">Prime Site</span> is a new company and we are excited
+          about attracting clients. In order to celebrate our inauguration
+          we are offering deep discounts for all projects started this spring
+          2020.
+        </p>
+
+        <p>
+          Our experience in working for &quot;<em>Large-market</em> class&quot;
+          software development companies averaged around <samp>$225/hr</samp>.
+
+          We are now a &quot;<em>Small-market</em> class&quot;
+          software development company and charge less than <samp>$150/hr</samp>
+          on average.
+        </p>
+
+        <p>
+          For the month of April we are offering an attractive <samp>90%</samp>
+          discount on all projects. In May we continue the savings with
+          <samp>75%</samp> and finally half off in June.
+        </p>
+
+        <p>
+          <a href="#contact" onclick="closePromo()">Contact</a> us now to
+          get started.
+        </p>
+
       </div>
-    </div>
-    <!-- end content -->
+    </section>
+    <footer class="modal-card-foot">
+      <form onclick="closePromo()">
+        <button formmethod="get" formaction="#contact" class="button is-success" type="submit">
+          Contact
+        </button>
+        <button type="button" class="button">Cancel</button>
+      </form>
+    </footer>
   </div>
-  <button class="modal-close is-large" aria-label="close"></button>
 </div>
 <!-- End Promotion Section -->
