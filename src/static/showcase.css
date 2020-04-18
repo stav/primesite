@@ -103,31 +103,29 @@ html {
   padding: 60px 0px;
 }
 
-.main-content .section-dark.resume {
+.main-content .section-dark.security {
   padding: 60px;
 }
 
 @media (max-width: 599px) {
-  .main-content .section-dark.resume {
+  .main-content .section-dark.security {
     padding-top: 75px;
   }
 }
 
-.main-content .section-dark.resume .title {
+.main-content .section-dark.security .title {
   padding: 20px;
 }
 
-.main-content .section-dark.resume button {
-  border: 2px solid #43485c;
+.main-content .section-dark.security button {
   background: white;
+  border: 2px solid #43485c;
   color: #43485c;
-  height: 50px;
-  width: 250px;
   font-size: 1rem;
   text-transform: uppercase;
 }
 
-.main-content .section-dark.resume .fa-download {
+.main-content .section-dark.security .fa-download {
   color: #1f2c6c;
 }
 

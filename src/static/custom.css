@@ -84,6 +84,9 @@ footer .subtitle {
   padding-left: 4px;
   color: rgb(74, 74, 74);
 }
+.login.card {
+  background-color: unset;
+}
 
 /* Navigation */
 .navbar-burger {
