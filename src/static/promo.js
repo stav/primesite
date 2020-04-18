@@ -12,14 +12,7 @@ function closePromo() {
 
 function contactPromo() {
 
-	closePromo()
-	focusElement('contact-name')
-
-}
-
-function focusElement ( name ) {
-
-  // For some reason Firefox need the timeout
-  setTimeout('document.getElementById("contact-name").focus()', 500)
+  closePromo()
+  focusElement('contact-name')
 
 }

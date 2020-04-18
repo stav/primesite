@@ -10,7 +10,7 @@
       </div>
       <div class="column is-3">
         <figure
-          onclick="setModalImage('img/project-01_1059x596.jpg', 'img/project-01_1082x5333.jpg')"
+          onclick="setModalImage('img/project-01_1082x5333.jpg')"
           data-target="portfolio-card"
           class="image is-2by1 work-item modal-button"
           style="background-image: url('img/project-01_320x180.jpg')"
@@ -18,7 +18,7 @@
       </div>
       <div class="column is-3">
         <figure
-          onclick="setModalImage('img/project-02_1146x552.jpg', 'img/project-02_1186x4493.jpg')"
+          onclick="setModalImage('img/project-02_1186x4493.jpg')"
           data-target="portfolio-card"
           class="image is-2by1 work-item modal-button"
           style="background-image: url('img/project-02_320x180.jpg')"
@@ -26,7 +26,7 @@
       </div>
       <div class="column is-3">
         <figure
-          onclick="setModalImage('img/project-03_1176x548.jpg', 'img/project-03_1216x6740.jpg')"
+          onclick="setModalImage('img/project-03_1216x6740.jpg')"
           data-target="portfolio-card"
           class="image is-2by1 work-item modal-button"
           style="background-image: url('img/project-03_320x180.jpg')"
@@ -34,7 +34,7 @@
       </div>
       <div class="column is-3">
         <figure
-          onclick="setModalImage('img/project-04_563x381.jpg', 'img/project-04_563x2143.jpg')"
+          onclick="setModalImage('img/project-04_563x2143.jpg')"
           data-target="portfolio-card"
           class="image is-2by1 work-item modal-button"
           style="background-image: url('img/project-04_320x180.jpg')"
@@ -44,25 +44,44 @@
   </div>
 </div>
 
-<!-- 3dFlipVertical card -->
-<div id="portfolio-card" class="modal modal-fx-3dSlit">
+<div id="portfolio-card" class="modal">
   <div class="modal-background"></div>
-  <div class="modal-content">
-    <!-- content -->
-    <div class="card">
-      <div class="card-image">
-        <figure class="image">
-          <img id="profileImage" src="" alt="Profile image" title="Click to toggle information">
-        </figure>
-      </div>
-      <div class="card-content">
-        <div class="content has-text-centered">
-          Click the image above to toggle between the long and short versions.
+  <div class="modal-card">
+
+    <header class="modal-card-head">
+      <p class="modal-card-title"> Prime Site Portfolio Project </p>
+      <button onclick="closePortfolio()" class="delete" aria-label="close"></button>
+    </header>
+
+    <section class="portfolio modal-card-body">
+      <div id="portfolio-content" class="content">
+
+        <div class="card-image">
+          <img id="profileImage" src="" alt="Profile image">
         </div>
+
       </div>
-    </div>
-    <!-- end content -->
+    </section>
+
+    <footer class="modal-card-foot">
+      <form onclick="closePortfolio()">
+
+        <button class="button is-success"
+          type="submit"
+          formmethod="get"
+          formaction="#contact"
+          onclick="focusElement('contact-name')"
+          >
+          Contact
+        </button>
+
+        <button type="button" class="button">
+          Close
+        </button>
+
+      </form>
+    </footer>
+
   </div>
-  <button class="modal-close is-large" aria-label="close"></button>
 </div>
 <!-- End Portfolio Content -->

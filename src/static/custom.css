@@ -139,6 +139,9 @@ footer .subtitle {
 #my-work {
   background-color: white;
 }
+.portfolio.modal-card-body {
+  padding: 0;
+}
 
 /* Login */
 #login-error {
