@@ -2,12 +2,7 @@
 
 (function () {
 
-  // Setup callback function for when the document is loaded
-  var ready = (callback) => {
-    if (document.readyState != "loading") callback();
-    else document.addEventListener("DOMContentLoaded", callback);
-  }
-  ready(() => { // Document is now loaded
+  DOMReady(() => { // Document is now loaded
 
     // Whenever you click on a burger, toggle the "is-active" class of the menu
     // as well as of the burger itself

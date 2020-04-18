@@ -13,6 +13,6 @@ function closePromo() {
 function contactPromo() {
 
   closePromo()
-  focusElement('contact-name')
+  focusContactName()
 
 }
