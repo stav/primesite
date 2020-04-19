@@ -17,7 +17,7 @@
 
     <header class="modal-card-head">
       <p class="modal-card-title"> Spring Into Savings </p>
-      <button onclick="closePromo()" class="delete" aria-label="close"></button>
+      <button onclick="closeModal('promo-card')" class="delete" aria-label="close"></button>
     </header>
 
     <section class="modal-card-body">
@@ -51,15 +51,17 @@
         </p>
 
         <p>
-          <a href="#contact" onclick="contactPromo()">Contact</a> us now to
-          get started.
+          <a href="#contact" onclick="focusContactName(); closeModal('promo-card')">
+            Contact
+          </a>
+          us now to get started.
         </p>
 
       </div>
     </section>
 
     <footer class="modal-card-foot">
-      <form onclick="closePromo()">
+      <form onclick="closeModal('promo-card')">
         <button formmethod="get" formaction="#contact" onclick="focusContactName()" class="button is-success" type="submit">
           Contact
         </button>
