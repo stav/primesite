@@ -36,8 +36,8 @@ build:
 	@echo ~Building
 	mkdir -p ./dist
 	# Generate HTML
-	curl -o /dev/null http://localhost:5005/gen
-	mv ./src/index.html ./dist/
+	node src/gen.js
+	mv ./index.html ./dist/
 	# Copy Font Awesome
 	mkdir -p ./dist/fontawesome/css ./dist/fontawesome/webfonts
 	cp ./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css          ./dist/fontawesome/css
