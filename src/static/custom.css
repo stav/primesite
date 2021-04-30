@@ -53,7 +53,6 @@ footer .subtitle {
 .main-content .section-dark.stack {
   padding: 77px;
   background-color: #43485c;
-  background-color: #43485c;
   color: white;
 }
 .main-content .section-dark.stack .title,
@@ -144,6 +143,17 @@ footer .subtitle {
 }
 .portfolio.modal-card-body {
   padding: 0;
+}
+
+/* App */
+.main-content .section-dark.app {
+  background-color: #43485c;
+  padding: 77px;
+  color: white;
+}
+.main-content .section-dark.app .title,
+.main-content .section-dark.app .subtitle {
+  color: white;
 }
 
 /* Login */
