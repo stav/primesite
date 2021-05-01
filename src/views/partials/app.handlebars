@@ -1,29 +1,102 @@
-<!-- Begin Technology Content -->
-<div class="section-dark app" id="app">
+<!-- Begin App Content -->
+<div class="section-dark my-work app" id="app">
   <div class="container">
-    <div class="columns is-multiline">
-      <div class="column is-12 app" data-aos="fade-in" data-aos-easing="linear">
-        <h1 class="title has-text-centered section-title"> Blockchain App </h1>
-        <h2 class="subtitle section-blurb has-text-centered">
+    <div class="columns is-multiline" data-aos-easing="linear" data-aos="fade-in">
+      <div class="column is-12">
+        <h1 class="title section-title has-text-centered has-text-white"> Blockchain App </h1>
+        <h2 class="subtitle section-blurb has-text-centered has-text-white">
           CrApp - The Cryptocurrency Application
         </h2>
       </div>
-
-      <div class="columns is-12">
-        <div class="app column is-3 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
-          <p><img src="img/crapp-repos.png"></p>
-        </div>
-        <div class="app column is-3 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
-          <p><img src="img/crapp-pie.png"></p>
-        </div>
-        <div class="app column is-3 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
-          <p><img src="img/crapp-chart.png"></p>
-        </div>
-        <div class="app column is-3 has-text-centered" data-aos="fade-in" data-aos-easing="linear">
-          <p><img src="img/crapp-minis.png"></p>
-        </div>
+      <div class="column is-3">
+        <figure
+          onclick="setAppModalImage('img/crapp-repos.png', this)"
+          data-target="app-card"
+          data-desc="Repository spreadsheet"
+          class="image is-2by1 work-item modal-button"
+          style="background-image: url('img/crapp-repos.png')"
+        ></figure>
+      </div>
+      <div class="column is-3">
+        <figure
+          onclick="setAppModalImage('img/crapp-pie.png', this)"
+          data-target="app-card"
+          data-desc="Portfolio pie chart"
+          class="image is-2by1 work-item modal-button"
+          style="background-image: url('img/crapp-pie.png')"
+        ></figure>
+      </div>
+      <div class="column is-3">
+        <figure
+          onclick="setAppModalImage('img/crapp-chart.png', this)"
+          data-target="app-card"
+          data-desc="TradingView candlestick chart"
+          class="image is-2by1 work-item modal-button"
+          style="background-image: url('img/crapp-chart.png')"
+        ></figure>
+      </div>
+      <div class="column is-3">
+        <figure
+          onclick="setAppModalImage('img/crapp-minis.png', this)"
+          data-target="app-card"
+          data-desc="Portfolio performance overview"
+          class="image is-2by1 work-item modal-button"
+          style="background-image: url('img/crapp-minis.png')"
+        ></figure>
+      </div>
+      <div class="column is-12">
+        Learn more
       </div>
     </div>
   </div>
 </div>
-<!-- End Technology Content -->
+
+<div id="app-card" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+
+    <header class="modal-card-head">
+      <p class="modal-card-title has-text-white"> AirChain Financial Aggregator </p>
+      <button onclick="closeModal('app-card')" class="delete" aria-label="close"></button>
+    </header>
+
+    <section class="modal-card-body">
+      <div id="app-content" class="modal-content is-huge">
+
+        <div class="card-image">
+          <img id="appImage" src="" alt="App image" />
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="modal-card-foot">
+      <div class="full-grid columns is-vcentered">
+        <div class="column is-8">
+          <div id="appDescription" class="is-size-5 has-text-white"></div>
+        </div>
+        <div class="column is-4" style="text-align:right">
+          <form onclick="closeModal('app-card')">
+
+            <a href="/airchain">
+              <button type="button" class="button is-info"> Install </button>
+            </a>
+
+            <button class="button is-success"
+              type="submit"
+              formmethod="get"
+              formaction="#contact"
+              onclick="focusContactName()"
+              >
+              Contact
+            </button>
+
+            <button type="button" class="button is-hidden-mobile"> Close </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</div>
+<!-- End App Content -->

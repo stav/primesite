@@ -141,7 +141,7 @@ footer .subtitle {
 #my-work {
   background-color: white;
 }
-.portfolio.modal-card-body {
+.modal-card-body {
   padding: 0;
 }
 
@@ -151,9 +151,18 @@ footer .subtitle {
   padding: 77px;
   color: white;
 }
-.main-content .section-dark.app .title,
-.main-content .section-dark.app .subtitle {
-  color: white;
+#app-card .modal-card {
+  width: 1240px;
+  max-width: 100%;
+}
+#app-card .modal-card-head, .modal-card-foot {
+  background-color: #1f2c6c;
+}
+#app-content {
+  margin: 0;
+}
+.full-grid.columns {
+  width: 100%;
 }
 
 /* Login */

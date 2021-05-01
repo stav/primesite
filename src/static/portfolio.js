@@ -13,7 +13,7 @@
 
 })();
 
-function setModalImage( url ) {
+function setPortfolioModalImage( url ) {
 
   document.getElementById("profileImage").src = url;
 
