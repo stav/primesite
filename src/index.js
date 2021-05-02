@@ -24,6 +24,10 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+app.get('/airchain', (req, res) => {
+  res.render('airchain')
+})
+
 app.get('/gen', (req, res) => {
   // Render the index view and register a callback to process it
   res.render('index', function (err, html) {

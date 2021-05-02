@@ -5,7 +5,7 @@
       <div class="column is-12">
         <h1 class="title section-title has-text-centered has-text-white"> Blockchain App </h1>
         <h2 class="subtitle section-blurb has-text-centered has-text-white">
-          CrApp - The Cryptocurrency Application
+          AirChain - Financial Portfolio Navigator
         </h2>
       </div>
       <div class="column is-3">
@@ -44,9 +44,13 @@
           style="background-image: url('img/crapp-minis.png')"
         ></figure>
       </div>
+      {{#if home}}
       <div class="column is-12">
-        Learn more
+        <a href="/airchain#app">
+          <button type="button" class="button is-info"> Learn More </button>
+        </a>
       </div>
+      {{/if}}
     </div>
   </div>
 </div>
@@ -78,7 +82,7 @@
         <div class="column is-4" style="text-align:right">
           <form onclick="closeModal('app-card')">
 
-            <a href="/airchain">
+            <a href="/airchain#airchain">
               <button type="button" class="button is-info"> Install </button>
             </a>
 
