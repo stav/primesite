@@ -6,13 +6,13 @@ const config = require('./config.json')
 const port = 5005
 const app = express()
 
-app.set('view engine', 'handlebars')
+app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, 'views'))
-app.engine('handlebars', handlebars({
+app.engine('hbs', handlebars({
   defaultLayout: 'main',
   partialsDir: path.join(__dirname, 'views/partials'),
   layoutsDir: path.join(__dirname, 'views/layouts'),
-  extname: '.handlebars',
+  extname: '.hbs',
 }))
 
 app.use(express.static(path.join(__dirname, 'static')))
