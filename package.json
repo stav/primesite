@@ -1,10 +1,13 @@
 {
   "name": "primesite",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "https://primesite.dev/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "css-build": "node-sass --omit-source-map-url src/sass/bulma.scss src/static/lib/bulma.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch",
+    "build": "node src/gen.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +22,10 @@
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
+    "bulma": "^0.9.2",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
+    "node-sass": "^5.0.0",
     "nodemon": "^2.0.4"
   }
 }

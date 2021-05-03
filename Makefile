@@ -34,9 +34,13 @@ clean:
 build:
 	@echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	@echo ~Building
+	@make clean
 	mkdir -p ./dist
+	# Generate CSS
+	npm run css-build
 	# Generate HTML
-	node src/gen.js
+	npm run build
+	# Move HTML
 	mv ./index.html ./airchain.html ./dist/
 	# Copy Font Awesome
 	mkdir -p ./dist/fontawesome/css ./dist/fontawesome/webfonts
@@ -45,7 +49,7 @@ build:
 	cp ./node_modules/@fortawesome/fontawesome-free/css/solid.css                ./dist/fontawesome/css
 	cp ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2  ./dist/fontawesome/webfonts
 	cp ./node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2 ./dist/fontawesome/webfonts
-	# Copy to distribution directory
+	# Copy static files to distribution directory
 	cp -r ./src/static/* ./dist
 
 deploy:
