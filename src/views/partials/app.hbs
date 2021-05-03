@@ -2,55 +2,11 @@
 <div class="section-dark my-work app" id="app">
   <div class="container">
     <div class="columns is-multiline" data-aos-easing="linear" data-aos="fade-in">
-      <div class="column is-12">
-        <h1 class="title section-title has-text-centered has-text-white"> Financial App </h1>
-        <h2 class="subtitle section-blurb has-text-centered has-text-white">
-          AirChain Portfolio Navigator
-        </h2>
-      </div>
-      <div class="column is-3">
-        <figure
-          onclick="setAppModalImage('img/crapp-repos.png', this)"
-          data-target="app-card"
-          data-desc="Repository spreadsheet"
-          class="image is-2by1 work-item modal-button"
-          style="background-image: url('img/crapp-repos.png')"
-        ></figure>
-      </div>
-      <div class="column is-3">
-        <figure
-          onclick="setAppModalImage('img/crapp-pie.png', this)"
-          data-target="app-card"
-          data-desc="Portfolio pie chart"
-          class="image is-2by1 work-item modal-button"
-          style="background-image: url('img/crapp-pie.png')"
-        ></figure>
-      </div>
-      <div class="column is-3">
-        <figure
-          onclick="setAppModalImage('img/crapp-chart.png', this)"
-          data-target="app-card"
-          data-desc="TradingView candlestick chart"
-          class="image is-2by1 work-item modal-button"
-          style="background-image: url('img/crapp-chart.png')"
-        ></figure>
-      </div>
-      <div class="column is-3">
-        <figure
-          onclick="setAppModalImage('img/crapp-minis.png', this)"
-          data-target="app-card"
-          data-desc="Portfolio performance overview"
-          class="image is-2by1 work-item modal-button"
-          style="background-image: url('img/crapp-minis.png')"
-        ></figure>
-      </div>
-      {{#if home}}
-      <div class="column is-12">
-        <a href="/airchain.html#app">
-          <button type="button" class="button is-info"> Learn More </button>
-        </a>
-      </div>
-      {{/if}}
+    {{> app.header}}
+
+    {{> app.figures}}
+
+    {{> app.footer}}
     </div>
   </div>
 </div>
