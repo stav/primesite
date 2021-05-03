@@ -37,7 +37,7 @@ build:
 	mkdir -p ./dist
 	# Generate HTML
 	node src/gen.js
-	mv ./index.html ./dist/
+	mv ./index.html ./airchain.html ./dist/
 	# Copy Font Awesome
 	mkdir -p ./dist/fontawesome/css ./dist/fontawesome/webfonts
 	cp ./node_modules/@fortawesome/fontawesome-free/css/fontawesome.css          ./dist/fontawesome/css

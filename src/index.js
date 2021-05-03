@@ -1,9 +1,10 @@
 const path = require('path')
 const express = require('express')
 const handlebars = require('express-handlebars')
+const config = require('./config.json')
+
 const port = 5005
 const app = express()
-const fs = require('fs')
 
 app.set('view engine', 'handlebars')
 app.set('views', path.join(__dirname, 'views'))
@@ -21,27 +22,11 @@ app.use('/fontawesome', express.static(
 ))
 
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index', {title: config.index.title})
 })
 
-app.get('/airchain', (req, res) => {
-  res.render('airchain')
-})
-
-app.get('/gen', (req, res) => {
-  // Render the index view and register a callback to process it
-  res.render('index', function (err, html) {
-
-    // console.log('html', html)
-    let writeStream = fs.createWriteStream('index.html')
-    writeStream.write(html)
-    writeStream.on('finish', () => {
-      console.log('wrote all data to file')
-    })
-    writeStream.end()
-
-    res.send(html)
-  })
+app.get('/airchain.html', (req, res) => {
+  res.render('airchain', {title: config.airchain.title})
 })
 
 app.listen(port, () => {

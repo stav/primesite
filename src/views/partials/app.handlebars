@@ -3,9 +3,9 @@
   <div class="container">
     <div class="columns is-multiline" data-aos-easing="linear" data-aos="fade-in">
       <div class="column is-12">
-        <h1 class="title section-title has-text-centered has-text-white"> Blockchain App </h1>
+        <h1 class="title section-title has-text-centered has-text-white"> Financial App </h1>
         <h2 class="subtitle section-blurb has-text-centered has-text-white">
-          AirChain - Financial Portfolio Navigator
+          AirChain Portfolio Navigator
         </h2>
       </div>
       <div class="column is-3">
@@ -46,7 +46,7 @@
       </div>
       {{#if home}}
       <div class="column is-12">
-        <a href="/airchain#app">
+        <a href="/airchain.html#app">
           <button type="button" class="button is-info"> Learn More </button>
         </a>
       </div>
@@ -60,7 +60,7 @@
   <div class="modal-card">
 
     <header class="modal-card-head">
-      <p class="modal-card-title has-text-white"> AirChain Financial Aggregator </p>
+      <p class="modal-card-title has-text-white"> AirChain Portfolio Navigator </p>
       <button onclick="closeModal('app-card')" class="delete" aria-label="close"></button>
     </header>
 
@@ -80,22 +80,24 @@
           <div id="appDescription" class="is-size-5 has-text-white"></div>
         </div>
         <div class="column is-4" style="text-align:right">
-          <form onclick="closeModal('app-card')">
+          <form onclick="closeModal('app-card')" method="GET">
 
-            <a href="/airchain#airchain">
-              <button type="button" class="button is-info"> Install </button>
-            </a>
+            <button class="button is-info" type="submit"
+              formaction="/airchain.html#airchain"
+              >
+              Install
+            </button>
 
-            <button class="button is-success"
-              type="submit"
-              formmethod="get"
+            <button class="button is-success" type="submit"
               formaction="#contact"
               onclick="focusContactName()"
               >
               Contact
             </button>
 
-            <button type="button" class="button is-hidden-mobile"> Close </button>
+            <button type="button" class="button is-hidden-mobile">
+              Close
+            </button>
           </form>
         </div>
       </div>
