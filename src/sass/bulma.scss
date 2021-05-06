@@ -1,5 +1,8 @@
 @charset "utf-8";
 
-$section-padding: 1rem;
+$spacing-shortcuts: ("padding": "pd", "margin-top": "mgt", "margin-left": "mgl");
+$spacing-horizontal: "h";
+$spacing-vertical: null;
+$spacing-values: ("small": 10px, "medium": 30px, "large": 60px);
 
 @import "../../node_modules/bulma/bulma.sass";

@@ -1,25 +1,77 @@
 <!-- Begin AirChain -->
-<div id="airchain" class="section-dark airchain">
-  <div class="container">
-    <div
-      class="columns is-multiline"
-      data-aos="fade-in"
-      data-aos-easing="linear"
-      >
-      <div class="column is-12">
-        <h2 class="title"> Installation </h2>
-      </div>
-      <div class="column is-12">
-        <p>
-          Currently the only way to get the full system working is to clone
-          and install from the
-          <a href="https://github.com/stav/crapp#readme" target="_blank">
-            GitHub repository
-            <i class="fas fa-external-link-alt"></i>
-          </a>.
-        </p>
-      </div>
+<div id="install" class="section-dark airchain">
+  <div class="container is-multiline" data-aos="fade-in" data-aos-easing="linear">
+
+    <h2 class="block title"> Installation </h2>
+
+    <div class="block mgt-medium is-italic">
+      These instructions assume you have <a href="https://yarnpkg.com/">Yarn</a> installed.
     </div>
+
+    <div class="block is-size-4">
+      Open a terminal in the project <em>parent</em> directory.
+    </div>
+
+    <div class="block">
+      Clone the
+      <a href="https://github.com/stav/crapp" target="_blank">
+        GitHub repository
+        <i class="fas fa-external-link-alt"></i>
+      </a>:
+    </div>
+    <div class="has-background-info-dark has-text-white-ter is-family-code pdl-medium pd-small">
+      git clone git@github.com:stav/crapp.git
+    </div>
+
+    <div class="block mgt-medium">
+      Enter the repository directory:
+    </div>
+    <div class="has-background-info-dark has-text-white-ter is-family-code pdl-medium pd-small">
+      cd crapp
+    </div>
+
+    <div class="block mgt-medium">
+      Use Yarn to install the dependencies:
+    </div>
+    <div class="has-background-info-dark has-text-white-ter is-family-code pdl-medium pd-small">
+      yarn
+    </div>
+
+    <div class="block mgt-medium">
+      Copy over the example database and edit as needed:
+    </div>
+    <div class="has-background-info-dark has-text-white-ter is-family-code pdl-medium pd-small">
+      cp data/repositorys.json.example data/repositorys.json
+    </div>
+
+    <div class="block mgt-medium">
+      If you have accounts at either Binance or Coinbase then copy over the example environment file and edit as needed:
+    </div>
+    <div class="has-background-info-dark has-text-white-ter is-family-code pdl-medium pd-small">
+      cp .env.example .env
+    </div>
+
+    <div class="block mgt-medium">
+      Run the server:
+    </div>
+    <div class="has-background-info-dark has-text-white-ter is-family-code pdl-medium pd-small">
+      yarn dev
+    </div>
+
+    <div class="block mgt-medium">
+      The webserver will be available at
+      <a href="http://localhost:3000/" target="_blank">
+        http://localhost:3000
+        <i class="fas fa-external-link-alt"></i>
+      </a>
+    </div>
+
+    For a detailed explanation on how things work, check out the
+    <a href="https://nuxtjs.org/" target="_blank">
+      Nuxt.js docs
+      <i class="fas fa-external-link-alt"></i>
+    </a>.
+
   </div>
 </div>
 <!-- End AirChain -->

@@ -1,14 +1,8 @@
 <!-- Begin App Content -->
-<div class="section-dark my-work app" id="app">
-  <div class="container">
-    <div class="columns is-multiline" data-aos-easing="linear" data-aos="fade-in">
-    {{> app.header}}
-
-    {{> app.figures}}
-
-    {{> app.footer}}
-    </div>
-  </div>
+<div id="app" class="section-dark my-work app">
+  {{> app.header}}
+  {{> app.figures}}
+  {{> app.footer}}
 </div>
 
 <div id="app-card" class="modal">
@@ -39,7 +33,7 @@
           <form onclick="closeModal('app-card')" method="GET">
 
             <button class="button is-info" type="submit"
-              formaction="/airchain.html#airchain"
+              formaction="/airchain.html#install"
               >
               Install
             </button>

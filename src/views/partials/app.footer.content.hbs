@@ -1,0 +1,68 @@
+<div class="container mgt-large pa-0">
+
+  <h3 class="block is-size-3">The AirChain portfolio navigator keeps track of your positions.</h3>
+
+  <div class="columns ma-0">
+    <div class="column is-6"> Enter data into a text file: </div>
+    <div class="column is-6 has-text-right pr-0"> data/repository.json </div>
+  </div>
+
+  <pre class="px-0">
+[
+  {
+    "name": "Ledger",
+    "coins": [
+      { "symbol": "BTC", "quantity": 0.1 },
+      { "symbol": "ETH", "quantity": 1 },
+      { "symbol": "LINK", "quantity": 10 },
+      { "symbol": "USDC", "quantity": 100 }
+    ]
+  },
+  {
+    "name": "BlockFi",
+    "coins": [
+      { "symbol": "BTC", "quantity": 0.2 }
+    ],
+    "transactions": [
+      { "date": "2020-08-13",  "type": "deposit" ,  "symbol": "ETH",   "amount":  3     },
+      { "date": "2020-08-31",  "type": "interest",  "symbol": "ETH" ,  "amount":  0.005 },
+      { "date": "2020-09-30",  "type": "interest",  "symbol": "ETH" ,  "amount":  0.01  },
+      { "date": "2020-10-31",  "type": "interest",  "symbol": "ETH" ,  "amount":  0.01  },
+      { "date": "2020-11-19",  "type": "withdral",  "symbol": "ETH" ,  "amount": -3.025 }
+    ]
+  },
+  {
+    "name": "Kraken",
+    "coins": [
+      { "symbol": "BTC", "quantity": 0.2 }
+    ],
+    "transactions": [
+      { "date": "10-17-20 04:19:17 +0000",  "type": "deposit",  "symbol": "BTC",  "currency": "₿ Bitcoin (XBT)" ,  "amount": 0.2 }
+    ]
+  },
+  {
+    "name": "Bank Trust",
+    "coins": [
+      { "symbol": "USD", "quantity": 5000 }
+    ]
+  }
+]
+  </pre>
+
+  <h3 class="block is-size-3 mgt-medium">You can also use your exchange API keys.</h3>
+
+  <div class="columns">
+    <div class="column is-6"> Enter your keys into a text file: </div>
+    <div class="column is-6 has-text-right pr-0"> .env </div>
+  </div>
+
+  <pre class="px-0">
+BINANCE_API_KEY=4q6kiqdwd2mYfXW0khkia0wfliRZiNFrerXcZbCMmnpnb
+BINANCE_API_SECRET=z06mJeSaBAhgI1hG4LHic5O505HjhqesskAbgbYTbYbbws
+
+COINBASEPRO_API_KEY=37df6fff0f1e439dbd3e2446gnjmkmk8k2l8s74a
+COINBASEPRO_API_SECRET=wf63Wp6wKnzvSdhdNhKjg3nm49CnimnfmKjd0dVXdXmzddXuy7d6A3i3rgzdbZm
+COINBASEPRO_API_PASSPHRASE=usa836vasksdk
+  </pre>
+
+</div>
