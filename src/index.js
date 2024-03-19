@@ -8,7 +8,7 @@ const app = express()
 
 app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, 'views'))
-app.engine('hbs', handlebars({
+app.engine('hbs', handlebars.engine({
   defaultLayout: 'main',
   partialsDir: path.join(__dirname, 'views/partials'),
   layoutsDir: path.join(__dirname, 'views/layouts'),
